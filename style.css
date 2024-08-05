@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trirong', sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    color: black;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.3;
+    color: black;
+}
+
+h3 {
+    font-size: 1.75em;
+    line-height: 1.4;
+    color: black;
+}
+
+h4 {
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: black;
+}
+
+h5 {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: black;
+}
+
+h6 {
+    font-size: 1em;
+    line-height: 1.7;
+    color: black;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px ;
+    color: black;
+    background-color: bisque;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+
+}
+
+body {
+    width: 100%;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: seagreen;
+}
+
+.logo {
+
+    width: 100px;
+}
+
+/* header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: antiquewhite;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: slateblue;
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: slateblue;
+    bottom: -4px;
+    left: 20px;
+    position: absolute;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+
+}
+
+/*HomePage*/
+#hero {
+    background-image: url(./Images/dave.jpg);
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+    color: green;
+}
+
+#hero h2 {
+    color: beige;
+}
+
+#hero button {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    background-color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 40px 80px;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card h6 {
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: darkgray;
+    background-color: beige;
+    display: inline-block;
+}
+
+.container .card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid color gray;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 30px 20px rgb(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 30px 20px rgb(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: grey;
+    font-size: 12px;
+    
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: green; 
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./Images/background.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: burlywood;
+    font-size: 16px;
+}
+#banner h2{
+    color: peru;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: green;
+}
+#banner button:hover{
+    background-color: black;
+    color: blanchedalmond;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./Images/cbum.webp);
+    min-width:580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+    #sm-banner span{
+        color: white;
+        font-size: 28px;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+    button.white{
+        font-size: 13px;
+        font-weight: 600;
+        padding: 11px 18px ;
+        color: white;
+        background-color: transparent;
+        
+        cursor: pointer;
+        border: 1px solid color white;
+        outline: none;
+        transition: 0.2s;
+    }
+    #sm-banner .banner-box:hover button{
+        background: blanchedalmond;
+        border: 1px solid color burlywood;
+
+    }
+    #sm-banner .banner-box2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url(./Images/bum2.jpg);
+        min-width:580px;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+    }
+    #sm-banner .banner-box3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url(./Images/bum3.png);
+        min-width:580px;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        padding: 30px;
+    }
+
+    #banner3{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 80px;
+
+    }
+#banner3 .banner-box{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url(./Images/david1.jpg);
+        min-width:30%;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+        background-image: url(./Images/ran1.avif);
+    
+}
+#banner3 .banner-box3{
+       
+  background-image: url(./Images/ran2.webp);
+       
+}
+#banner3 h2{
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3{
+    color: rgb(229, 38, 38);
+    font-weight: 800;
+    font-size: 15px;
+}
+#newsettler{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(./Images/Email.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: black;
+}
+#newsettler h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+#newsettler p{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+#newsettler p span{
+color: yellow;
+}
+#newsettler input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsettler button{ background-color: green;
+color: antiquewhite;
+white-space: nowrap;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+}
+
+#newsettler .form{
+    display: flex;
+    width: 40%;
+
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.social-icons i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.app-buttons img,
+.payment-icons img {
+    width: 100px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width:799px) {
+    .section-p1{
+        padding: 40px 40px;
+    }
+ #navbar  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: antiquewhite;
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.01);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+
+ } 
+ #navbar.active {
+    right: 0px;
+
+ }
+ #navbar li{
+    margin-bottom: 25px;
+ }
+ #mobile{
+    display: flex;
+    align-items: center;
+ }
+ #mobile i{
+    color: black;
+    font-size: 24px;
+    padding-left: 20px;
+}
+#close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: black;
+    font-size: 24px;    
+}
+    #lg-bag{
+        display: none;
+    }
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    .container {
+        justify-content: center;}
+
+        .card {
+            margin: 15px 15px;
+        }
+        #product1 .pro-container{
+            justify-content: center;
+        }
+        #product1 .pro{
+            margin: 15px;
+        }
+        #banner {    
+            height: 20vh;  
+        }
+        #sm-banner .banner-box {
+            
+            min-width: 100%;
+            height: 30vh;
+          
+        }
+        #banner3 {
+            
+            padding: 0px 40px;
+        }
+        #banner3 .banner-box{
+               width: 28%;        
+            }  
+}
+ 
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+    #prodetails{
+        display: flex;
+        margin-top: 20px;
+    }
+    #prodetails .single-pro-details{
+        width: 50%;
+        padding-top: 20px;
+
+    }
+    #prodetails .single-pro-details h4{
+        padding: 40px 0 20px 0;
+    }
+    #prodetails .single-pro-details h2{
+        font-size: 26px;
+    }
+    #prodetails .single-pro-details select{
+        display: block;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+    #prodetails .single-pro-details input{
+        width: 50px;
+        height: 47px;
+        padding-left: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    #prodetails .single-pro-details input:focus{
+        outline: none;
+    }
+  
+
+    #prodetails .single-pro-details span{
+        line-height: 25px;
+    }
+    
